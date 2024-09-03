@@ -7,12 +7,10 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  },
-  "dependencies": {
-    "@nuxt/eslint": "^0.5.2",
+    "postinstall": "nuxt prepare"
+    },
+  "devDependencies": {
+    "@formkit/nuxt": "^1.6.5",
     "@nuxt/fonts": "^0.7.2",
     "@nuxt/image": "^1.7.0",
     "@nuxt/scripts": "^0.7.1",

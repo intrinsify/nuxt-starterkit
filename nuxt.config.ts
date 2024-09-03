@@ -7,14 +7,13 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/fonts",
     "@nuxt/scripts",
-    "@nuxt/eslint",
-    "@nuxt/ui"
+    "@nuxt/ui",
+    "@formkit/nuxt",
   ],
-  eslint: {
-    config: {
-      stylistic: true
-      }
+  formkit: {
+    // Experimental support for auto loading (see note):
+    autoImport: true
   },
-  compatibilityDate: '2024-04-03',
+  compatibilityDate: '2024-08-26',
   devtools: { enabled: true }
 })
