@@ -8,14 +8,16 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
-    },
+  },
   "devDependencies": {
     "@formkit/nuxt": "^1.6.5",
     "@nuxt/fonts": "^0.7.2",
     "@nuxt/image": "^1.7.0",
     "@nuxt/scripts": "^0.7.1",
     "@nuxt/ui": "^2.18.4",
+    "@nuxtjs/tailwindcss": "^6.12.2",
     "nuxt": "^3.13.0",
     "vue": "latest"
-  }
+  },
+  "packageManager": "pnpm@8.7.4+sha1.9dfcac89c4010a00ce092c3cda76dab72cd99198"
 }

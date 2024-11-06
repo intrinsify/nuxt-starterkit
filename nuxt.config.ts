@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@nuxt/scripts",
     "@nuxt/ui",
     "@formkit/nuxt",
+    "@nuxtjs/tailwindcss"
   ],
   formkit: {
     // Experimental support for auto loading (see note):
