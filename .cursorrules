@@ -1,0 +1,22 @@
+
+# Nuxt 3 Compatibility Mode 4
+
+Working with Nuxt 3 but in compatibility mode 4. That mean the follwoing fodler structure is used:
+
+The app folder contains the following:
+- app.vue
+- pages
+- components
+- composables
+
+The server folder contains all Nitro related files and folders
+
+- api routes
+- server entry point
+- server middleware
+- server plugins
+
+The shared folder on root is new and containts
+- shared types 
+- shared utils
+
