@@ -1,0 +1,65 @@
+# Nuxt
+- If possible, use nuxt native functionality. The includes the Nitro server as well. 
+- If packages needs to be added, check if there is a nuxt module available, which is compatible with 3.x or 4.x.
+- Pay attention to the new folder structure of Nuxt, which is enabled by the future compabilityMode to Version 4. That means to opt-in into nuxt 4 features, until nuxt 4 will be finally released. That will help us to keep the structure clean. See Nuxt folder strucutre
+- Nuxt has an awesome auto-import function. Don't import components or other stuff i
+
+## Nuxt folder structure
+
+Nuxt 4 new folder strucutre:
+
+What Changed
+the new Nuxt default srcDir is app/ by default, and most things are resolved from there.
+serverDir now defaults to <rootDir>/server rather than <srcDir>/server
+layers/, modules/ and public/ are resolved relative to <rootDir> by default
+if using Nuxt Content v2.13+, content/ is resolved relative to <rootDir>
+a new dir.app is added, which is the directory we look for router.options.ts and spa-loading-template.html - this defaults to <srcDir>/
+
+example setup:
+
+.output/
+.nuxt/
+app/
+  assets/
+  components/
+  composables/
+  layouts/
+  middleware/
+  pages/
+  plugins/
+  utils/
+  app.config.ts
+  app.vue
+  router.options.ts
+content/
+layers/
+modules/
+node_modules/
+public/
+server/
+  api/
+  middleware/
+  plugins/
+  routes/
+  utils/
+nuxt.config.ts
+
+Important Note: The auth middleware to protect ADMIN pages lives in server/middleware NOT app/middleware or /middleware.
+
+# Nitro
+
+When writing api routes using Nitro use the xy.get.ts and xy.post.ts and differ between the http methods. Don't mix it up in one file.
+
+# Vue
+- Put the script tag always on top of vue files. Add the setup attribue and the language to typescript. e.g. <script setup lang="ts">
+- Use the composition api only, to write logic. 
+
+# Database
+- Use PRIMSA as a ORM. 
+
+# CSS Classes and Tailwind
+
+Use the css classes given in the assets. Don't use tailwind barley and and only if really needed. Tailwindcss will be in addion to our component based logic. Add a comment if classes have been changed or updated in this format: /*TODO: changed class:  */. 
+
+# Types
+- Use type over interface! This is a rule!
